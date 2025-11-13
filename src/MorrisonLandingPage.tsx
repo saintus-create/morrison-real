@@ -129,52 +129,55 @@ const MorrisonLandingPage = () => {
       </header>
 
       <main>
-        {/* Hero Section */}
+        {/* Hero Section - Vercel Style Constraint */}
         <section className="relative overflow-hidden">
-          <div className="container mx-auto px-4 py-24 sm:py-32">
-            <div className="mx-auto max-w-2xl text-center">
-              <Badge className="mb-4">
-                <Star className="mr-1 h-3 w-3" />
-                Morrison 2.0
-              </Badge>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                Build faster with
-                <span className="text-primary"> Morrison</span>
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                A beautiful, accessible, and customizable React component library built with Radix UI and Tailwind CSS.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button size="lg" asChild>
-                  <a href="#get-started">
-                    Get started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <a href="https://github.com/morrison">
-                    <Play className="mr-2 h-4 w-4" />
-                    View demo
-                  </a>
-                </Button>
+          <AspectRatio ratio={16/9} className="bg-muted/30">
+            <div className="container mx-auto h-full px-4 flex items-center justify-center">
+              <div className="mx-auto max-w-4xl text-center space-y-6">
+                <Badge className="mb-4">
+                  <Star className="mr-1 h-3 w-3" />
+                  Morrison 2.0
+                </Badge>
+                <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
+                  Build faster with
+                  <span className="text-primary"> Morrison</span>
+                </h1>
+                <p className="text-xl leading-8 text-muted-foreground max-w-2xl mx-auto">
+                  A beautiful, accessible, and customizable React component library built with Radix UI and Tailwind CSS.
+                </p>
+                <div className="flex items-center justify-center gap-x-6">
+                  <Button size="lg" asChild>
+                    <a href="#get-started">
+                      Get started
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="lg" asChild>
+                    <a href="https://github.com/morrison">
+                      <Play className="mr-2 h-4 w-4" />
+                      View demo
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
+          </AspectRatio>
         </section>
 
-        {/* Features Grid */}
+        {/* Features Grid - Vercel Style */}
         <section className="py-24 sm:py-32">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Everything you need to build modern apps
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Morrison provides a complete set of components and utilities for building beautiful, accessible web applications.
-              </p>
-            </div>
-            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <AspectRatio ratio={21/9} className="container mx-auto px-4">
+            <div className="h-full flex flex-col justify-center">
+                <div className="mx-auto max-w-3xl text-center space-y-6">
+                  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                    Everything you need to build modern apps
+                  </h2>
+                  <p className="text-xl leading-8 text-muted-foreground">
+                    Morrison provides a complete set of components and utilities for building beautiful, accessible web applications.
+                  </p>
+                </div>
+                <div className="mx-auto mt-16 max-w-4xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
+                  <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                 <div className="relative pl-16">
                   <dt className="text-base font-semibold leading-7">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
@@ -219,76 +222,96 @@ const MorrisonLandingPage = () => {
                     Built with TypeScript for full type safety and excellent developer experience.
                   </dd>
                 </div>
-              </dl>
+                </dl>
+              </div>
             </div>
-          </div>
+          </AspectRatio>
         </section>
 
-        {/* Component Showcase */}
+        {/* Component Showcase - Vercel Style */}
         <section className="bg-muted/50 py-24 sm:py-32">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Beautiful components out of the box
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Each component is carefully crafted with attention to detail and usability.
-              </p>
+          <AspectRatio ratio={21/9} className="container mx-auto px-4">
+            <div className="h-full flex flex-col justify-center space-y-12">
+              {/* Section Header */}
+              <div className="mx-auto max-w-3xl text-center space-y-6">
+                <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                  Beautiful components out of the box
+                </h2>
+                <p className="text-xl leading-8 text-muted-foreground">
+                  Each component is carefully crafted with attention to detail and usability.
+                </p>
+              </div>
+
+              {/* Component Cards Grid */}
+              <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {/* Button Component Card */}
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/9} className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 p-6">
+                    <div className="h-full flex flex-col items-center justify-center space-y-4">
+                      <div className="space-y-2">
+                        <Button>Default</Button>
+                        <Button variant="outline">Outline</Button>
+                        <Button variant="ghost">Ghost</Button>
+                      </div>
+                    </div>
+                  </AspectRatio>
+                  <CardContent className="p-6">
+                    <CardTitle>Button Component</CardTitle>
+                    <CardDescription className="mt-2">
+                      Beautiful, accessible buttons with multiple variants and size options
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+
+                {/* Input Components Card */}
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/9} className="bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/30 dark:to-blue-950/30 p-6">
+                    <div className="h-full flex flex-col items-center justify-center space-y-4">
+                      <Input placeholder="Enter your email" className="max-w-xs" />
+                      <Input placeholder="Password" type="password" className="max-w-xs" />
+                    </div>
+                  </AspectRatio>
+                  <CardContent className="p-6">
+                    <CardTitle>Input Components</CardTitle>
+                    <CardDescription className="mt-2">
+                      Form inputs with validation states and error handling
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+
+                {/* Cards & Badges Card */}
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/9} className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 p-6">
+                    <div className="h-full flex flex-col items-center justify-center space-y-4">
+                      <Badge>Badge</Badge>
+                      <Badge variant="outline">Outline Badge</Badge>
+                      <Badge variant="secondary">Secondary Badge</Badge>
+                    </div>
+                  </AspectRatio>
+                  <CardContent className="p-6">
+                    <CardTitle>Cards & Badges</CardTitle>
+                    <CardDescription className="mt-2">
+                      Flexible content containers and status indicators
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
-            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              {/* Component examples would go here */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Button Component</CardTitle>
-                  <CardDescription>
-                    Beautiful, accessible buttons with multiple variants
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <Button>Default</Button>
-                  <Button variant="outline">Outline</Button>
-                  <Button variant="ghost">Ghost</Button>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Input Components</CardTitle>
-                  <CardDescription>
-                    Form inputs with validation and error states
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <Input placeholder="Enter your email" />
-                  <Input placeholder="Password" type="password" />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Cards & Badges</CardTitle>
-                  <CardDescription>
-                    Flexible content containers and status indicators
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <Badge>Badge</Badge>
-                  <Badge variant="outline">Outline Badge</Badge>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+          </AspectRatio>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section - Vercel Style */}
         <section className="py-24 sm:py-32">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Ready to get started?
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Join thousands of developers building beautiful applications with Morrison.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+          <AspectRatio ratio={16/9} className="container mx-auto px-4">
+            <div className="h-full flex items-center justify-center">
+              <div className="mx-auto max-w-4xl text-center space-y-8">
+                <h2 className="text-5xl font-bold tracking-tight sm:text-6xl">
+                  Ready to get started?
+                </h2>
+                <p className="text-xl leading-8 text-muted-foreground max-w-2xl mx-auto">
+                  Join thousands of developers building beautiful applications with Morrison.
+                </p>
+                <div className="flex items-center justify-center gap-x-6">
                 <Button size="lg" asChild>
                   <a href="https://github.com/morrison">
                     <Github className="mr-2 h-4 w-4" />
@@ -304,7 +327,7 @@ const MorrisonLandingPage = () => {
                 </Button>
               </div>
             </div>
-          </div>
+          </AspectRatio>
         </section>
       </main>
 
