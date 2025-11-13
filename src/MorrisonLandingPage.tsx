@@ -129,10 +129,10 @@ const MorrisonLandingPage = () => {
       </header>
 
       <main className="max-w-7xl mx-auto">
-        {/* Hero Section - Centered Layout */}
+        {/* Hero Section - Floating Frame */}
         <section className="relative overflow-hidden px-6">
           <AspectRatio ratio={16/9} className="bg-muted/30">
-            <div className="h-full flex items-center justify-center">
+            <div className="container mx-auto h-full px-4 flex items-center justify-center">
               <div className="mx-auto max-w-4xl text-center space-y-6">
                 <Badge className="mb-4">
                   <Star className="mr-1 h-3 w-3" />
@@ -164,9 +164,9 @@ const MorrisonLandingPage = () => {
           </AspectRatio>
         </section>
 
-        {/* Features Grid - Centered Layout */}
-        <section className="py-24 sm:py-32 px-6">
-          <AspectRatio ratio={21/9} className="max-w-5xl mx-auto">
+        {/* Features Grid - Floating Frame */}
+        <section className="py-24 sm:py-32">
+          <AspectRatio ratio={21/9} className="container mx-auto px-4">
             <div className="h-full flex flex-col justify-center">
                 <div className="mx-auto max-w-3xl text-center space-y-6">
                   <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
@@ -228,9 +228,9 @@ const MorrisonLandingPage = () => {
           </AspectRatio>
         </section>
 
-        {/* Component Showcase - Centered Layout */}
-        <section className="bg-muted/50 py-24 sm:py-32 px-6">
-          <AspectRatio ratio={21/9} className="max-w-5xl mx-auto">
+        {/* Component Showcase - Floating Frame */}
+        <section className="bg-muted/50 py-24 sm:py-32">
+          <AspectRatio ratio={21/9} className="container mx-auto px-4">
             <div className="h-full flex flex-col justify-center space-y-12">
               {/* Section Header */}
               <div className="mx-auto max-w-3xl text-center space-y-6">
@@ -300,9 +300,9 @@ const MorrisonLandingPage = () => {
           </AspectRatio>
         </section>
 
-        {/* CTA Section - Centered Layout */}
-        <section className="py-24 sm:py-32 px-6">
-          <AspectRatio ratio={16/9} className="max-w-5xl mx-auto">
+        {/* CTA Section - Floating Frame */}
+        <section className="py-24 sm:py-32">
+          <AspectRatio ratio={16/9} className="container mx-auto px-4">
             <div className="h-full flex items-center justify-center">
               <div className="mx-auto max-w-4xl text-center space-y-8">
                 <h2 className="text-5xl font-bold tracking-tight sm:text-6xl">
