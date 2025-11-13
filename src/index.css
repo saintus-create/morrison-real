@@ -144,7 +144,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "SF Pro Compact", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 }
 
@@ -262,50 +262,67 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* SF Pro Font Face Declarations (for web font hosting) */
+/* SF Pro Compact Font Face Declarations (for web font hosting) */
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Regular.woff2") format("woff2"),
-       url("/fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SF Pro Compact";
+  src: url("/fonts/SF-Compact.ttf") format("truetype"),
+       url("/fonts/SFCompact.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Bold.woff2") format("woff2"),
-       url("/fonts/SFProDisplay-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("/fonts/SFProText-Regular.woff2") format("woff2"),
-       url("/fonts/SFProText-Regular.woff") format("woff");
+  font-family: "SF Pro Compact";
+  src: url("/fonts/SFCompactItalic.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro Text";
-  src: url("/fonts/SFProText-Semibold.woff2") format("woff2"),
-       url("/fonts/SFProText-Semibold.woff") format("woff");
+  font-family: "SF Pro Compact Display";
+  src: url("/fonts/SF-Compact-Display-Semibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
-/* Font utility classes */
-.font-sf-pro {
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+@font-face {
+  font-family: "SF Pro Compact Display";
+  src: url("/fonts/SF-Compact-Display-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-.font-sf-pro-text {
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+@font-face {
+  font-family: "SF Pro Compact Display";
+  src: url("/fonts/SF-Compact-Display-Ultralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Compact Rounded";
+  src: url("/fonts/SF-Compact-Rounded-Ultralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font utility classes */
+.font-sf-pro-compact {
+  font-family: "SF Pro Compact", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-sf-pro-compact-display {
+  font-family: "SF Pro Compact Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-sf-pro-compact-rounded {
+  font-family: "SF Pro Compact Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 /* Print styles */
