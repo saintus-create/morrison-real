@@ -31,6 +31,13 @@ import { Input } from "./ui/input";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { AspectRatio } from "./ui/aspect-ratio";
+import { 
+  LiquidGlassCard, 
+  LiquidGlassCardContent, 
+  LiquidGlassCardDescription, 
+  LiquidGlassCardHeader, 
+  LiquidGlassCardTitle 
+} from "./ui/liquid-glass-card";
 
 const MorrisonLandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -294,6 +301,39 @@ const MorrisonLandingPage = () => {
                       Flexible content containers and status indicators
                     </CardDescription>
                   </CardContent>
+                </Card>
+
+                {/* Liquid Glass Card - Special Featured Component */}
+                <div className="lg:col-span-1 sm:col-span-2">
+                  <LiquidGlassCard 
+                    variant="gradient" 
+                    size="lg" 
+                    glow="strong" 
+                    animation="hover"
+                    className="h-full"
+                  >
+                    <LiquidGlassCardHeader>
+                      <LiquidGlassCardTitle className="text-center">
+                        Liquid Glass Card
+                      </LiquidGlassCardTitle>
+                      <LiquidGlassCardDescription className="text-center">
+                        New premium glassmorphism component with liquid animations
+                      </LiquidGlassCardDescription>
+                    </LiquidGlassCardHeader>
+                    <LiquidGlassCardContent className="space-y-4">
+                      <div className="flex flex-col space-y-3">
+                        <div className="h-12 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-lg border border-white/10 backdrop-blur-sm flex items-center justify-center">
+                          <span className="text-sm font-medium">Interactive Hover Effects</span>
+                        </div>
+                        <div className="h-12 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-lg border border-white/10 backdrop-blur-sm flex items-center justify-center">
+                          <span className="text-sm font-medium">Glassmorphism Design</span>
+                        </div>
+                        <div className="h-12 bg-gradient-to-r from-pink-400/20 to-blue-400/20 rounded-lg border border-white/10 backdrop-blur-sm flex items-center justify-center">
+                          <span className="text-sm font-medium">SF Pro Typography</span>
+                        </div>
+                      </div>
+                    </LiquidGlassCardContent>
+                  </LiquidGlassCard>
                 </Card>
               </div>
             </div>
