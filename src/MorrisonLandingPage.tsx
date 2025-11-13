@@ -30,6 +30,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 const MorrisonLandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
