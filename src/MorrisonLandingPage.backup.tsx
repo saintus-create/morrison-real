@@ -38,6 +38,7 @@ import {
   LiquidGlassCardHeader, 
   LiquidGlassCardTitle 
 } from "@/components/ui/liquid-glass-card";
+
 const MorrisonLandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
@@ -333,7 +334,7 @@ const MorrisonLandingPage = () => {
                       </div>
                     </LiquidGlassCardContent>
                   </LiquidGlassCard>
-                </div>
+                </Card>
               </div>
             </div>
           </AspectRatio>
@@ -351,19 +352,19 @@ const MorrisonLandingPage = () => {
                   Join thousands of developers building beautiful applications with Morrison.
                 </p>
                 <div className="flex items-center justify-center gap-x-6">
-                  <Button size="lg" asChild>
-                    <a href="https://github.com/morrison">
-                      <Github className="mr-2 h-4 w-4" />
-                      Get started on GitHub
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="lg" asChild>
-                    <a href="#docs">
-                      <Book className="mr-2 h-4 w-4" />
-                      Read docs
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+                <Button size="lg" asChild>
+                  <a href="https://github.com/morrison">
+                    <Github className="mr-2 h-4 w-4" />
+                    Get started on GitHub
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="#docs">
+                    <Book className="mr-2 h-4 w-4" />
+                    Read docs
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
               </div>
             </div>
           </AspectRatio>
